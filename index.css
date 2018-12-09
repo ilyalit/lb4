@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(16, 194, 238);
+}
+
+.div1{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.rightpart {
+  border-radius: 15px;
+  color: rgb(12, 12, 12);
+  height: auto;
+  width: 30%;
+  background-color: rgb(204, 247, 16);
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+}
+
+
+/* -------------------------часть 1---------------------*/
+
+.ex {
+  display: flex;
+}
+
+.leftpart {
+  border-radius: 15px;
+  height: auto;
+  width: 70%;
+  background-color: rgb(245, 111, 111);
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+
+#list div {
+  cursor: pointer;
+  padding-left: 4px;
+  font-size: 20px;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.workspace {
+  padding: 20px;
+  height: 300px;
+  width: 80%;
+  background-color: rgb(253, 251, 251);
+  margin: auto;
+}
+
+
+
+label {
+  font-size: 20px;
+}
+
+.statistic, .add, .add1 {
+  border-radius: 5px;
+  font-size: 20px;
+  height: 50px;
+  background-color: rgb(22, 207, 77);
+  cursor: pointer;
+}
+
+.statistic:hover, .add:hover {
+  opacity: 0.8;
+}
+
+.add {
+  margin-top: 5%;
+  width: 50%;
+}
+
+.add1 {
+  width: 100%;
+}
+
+.statistic {
+  margin-top: 20%;
+  width: 50%;
+}
+
+#colorTable, #text {
+  border-radius: 5px;
+  margin-top: 5%;
+  height: 50px;
+  width: 60%;
+}
+
+#text {
+  font-size: 17px;
+  
+}
+
+#colorTable {
+  cursor: pointer;
+  background-color: rgb(231, 231, 243);
+}
+
+.inputText {
+  cursor: pointer;
+}
+
+
+
+
+/* -------------------------часть 2---------------------*/
+
+.field {
+  position: relative;
+  margin: auto;
+}
+
+.field div {
+  position: absolute;
+  width: 100%;
+}
+
+#highlight {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+}
+
+#blocklight, #highlight {
+  outline: 5px dotted black;
+}
+
+#usl2 {
+  padding: 20px;
+  border-radius: 5px;
+  height: 300px;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+
+
+
+.addRect {
+  font-size: 20px;
+  height: 30px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: rgb(22, 207, 77);
+  cursor: pointer;
+}
+
+.addRect:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* -------------------------часть 3---------------------*/
+#usl3 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+#usl3 div {
+  position: absolute;
+}
+
+.draggable {
+  cursor: pointer;
+}
+
+#usl3 {
+  padding: 20px;
+  border-radius: 5px;
+  height: 300px;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
