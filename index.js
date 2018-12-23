@@ -232,3 +232,83 @@ function RightPart() {
     var b = document.body; //по всему документу
     b.style.webkitUserSelect = b.style.mozUserSelect = b.style.msUserSelect = 'none'; //добавляем свойство CSS - запретить выделение
   }
+
+  /*--------------------------------------------------------часть 4----------------------------------------------*/
+  function addRhombus() {
+    let newRhombus = document.createElement('div');
+    newRhombus.innerHTML;
+    let task4 = document.getElementById('usl4');
+    task4.appendChild(newRhombus);
+  
+    let r = Math.floor(Math.random() * (223));
+    let g = Math.floor(Math.random() * (256));
+    let b = Math.floor(Math.random() * (256));
+    let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+  
+    let widthNumber = getRandomInt(40, 150);
+    let widthPX = widthNumber.toString(10) + 'px';
+    let heightNumber = getRandomInt(40, 150);
+    let heightPX = heightNumber.toString(10) + 'px';
+  
+    let leftNumber = getRandomInt(0, 600);
+    let leftPX = leftNumber.toString(10) + 'px';
+    let topNumber = getRandomInt(0, 300);
+    let topPX = topNumber.toString(10) + 'px';
+  
+    Element.prototype.setAttributes = function(acct) {
+      for (var id in acct) {
+        if ((id === 'styles' || id === 'style') && typeof acct[id] === 'object') {
+          for (var prop in acct[id]) {
+            this.style[prop] = acct[id][prop];
+          }
+        } else {
+          this.setAttribute(id, acct[id]);
+        }
+      }
+    };
+  
+    newRhombus.setAttributes({
+      'styles': {
+        'height': heightPX,
+        'width': widthPX,
+        'backgroundColor': color,
+        'left': leftPX,
+        'top': topPX,
+        /* Rotate */
+        '-webkit-transform': 'rotate(-45deg)',
+        '-moz-transform': 'rotate(-45deg)',
+        '-ms-transform': 'rotate(-45deg)',
+        '-o-transform': 'rotate(-45deg)',
+        'transform': 'rotate(-45deg)',
+        /* Rotate Origin */
+        '-webkit-transform-origin': '0 100%',
+        '-moz-transform-origin': '0 100%',
+        '-ms-transform-origin': '0 100%',
+        '-o-transform-origin': '0 100%',
+        'transform-origin': '0 100%',
+        'margin': 'auto',
+      },
+    });
+  
+    newRhombus.setAttribute('class', 'rectitac');
+  
+    task4.onclick = function(event) {
+      let target = event.target; // где был клик?
+      if (target.className != 'rectitac') return; // не на rectitac? тогда не интересует
+      removeElement(target); // подсветить div
+      target.style.zIndex = 1000;
+    };
+  }
+  
+  
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+  
+  let selectedDive;
+  
+  function removeElement(node) {
+    selectedDive = node;
+    selectedDive.parentNode.removeChild(node);
+
+  }

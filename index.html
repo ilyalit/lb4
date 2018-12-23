@@ -13,17 +13,25 @@
     <header> 
         <div class="div1">
             <div ><button class="add1" href="#part1" onClick="document.getElementById('part1').style.display =  'block'; 
-                                                              document.getElementById('part2').style.display =  'none'; 
+                                                              document.getElementById('part2').style.display =  'none';
+                                                              document.getElementById('part4').style.display =  'none'; 
                                                               document.getElementById('part3').style.display =  'none'">
                                                               Часть 1</button></div>
-            <div ><button class="add1" href="#part2" onClick="document.getElementById('part2').style.display =  'block'; 
-                                                              document.getElementById('part1').style.display =  'none'; 
+            <div ><button class="add1" href="#part2" onClick="document.getElementById('part2').style.display =  'block';
+                                                              document.getElementById('part1').style.display =  'none';
+                                                              document.getElementById('part4').style.display =  'none'; 
                                                               document.getElementById('part3').style.display =  'none'">
                                                               Часть 2</button></div>
             <div ><button class="add1" href="#part3"onClick="document.getElementById('part3').style.display =  'block'; 
-                                                             document.getElementById('part1').style.display =  'none'; 
+                                                             document.getElementById('part1').style.display =  'none';
+                                                             document.getElementById('part4').style.display =  'none'; 
                                                              document.getElementById('part2').style.display =  'none'">
                                                              Часть 3</button></div>
+            <div ><button class="add1" href="#part4" onClick="document.getElementById('part4').style.display =  'block';
+                                                              document.getElementById('part2').style.display =  'none'; 
+                                                              document.getElementById('part1').style.display =  'none'; 
+                                                              document.getElementById('part3').style.display =  'none'">
+                                                              Часть 4</button></div>                                                  
         </div>
     </header>
 
@@ -86,6 +94,23 @@
           </div>
     
     </div> 
+    
+    <!---////////////////////////////////////////часть 4///////////////////////////-->
+    <div id='part4' style='display: none'>
+
+        <div class="ex">
+
+            <div class="leftpart">
+              <div class="field" id="usl4"></div>
+            </div>
+      
+            <div class="rightpart">
+              <button onclick="addRhombus()" class="addRect">Добавить</button>
+            </div>
+      
+        </div>
+    
+    </div>
 
 
  <!---///////////////////////////////////////подкл js///////////////////////////-->
